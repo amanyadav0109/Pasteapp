@@ -2,7 +2,7 @@ import { Copy } from "lucide-react";
 import toast from "react-hot-toast";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import "./Viewpaste.css"; // Import the CSS file
+import "../Viewpaste.css"; // Import the CSS file
 
 const ViewPaste = () => {
   const { id } = useParams();

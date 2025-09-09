@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { addToPastes, updateToPastes } from "../redux/pasteSlice";
 import { useSearchParams } from "react-router-dom";
-import "./Home.css"; // Import plain CSS
+import "../Home.css"; // Import plain CSS
 
 const Home = () => {
   const [value, setValue] = useState("");
