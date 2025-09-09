@@ -1,0 +1,172 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+/* General page container */
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: #f5f5f5; /* optional background */
+}
+
+/* Navbar container */
+.navbar {
+  width: 100%;
+  background-color: #2563eb; /* blue */
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/* Input field */
+.input-field {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Buttons */
+.button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: #fff;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1e40af;
+}
+
+/* Paste card */
+.paste-card {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(128, 121, 121, 0.3);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Paste card header */
+.paste-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(128, 121, 121, 0.3);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Colored circles */
+.circles {
+  display: flex;
+  gap: 6px;
+}
+
+.circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.circle.red {
+  background-color: rgb(255, 95, 87);
+}
+
+.circle.yellow {
+  background-color: rgb(254, 188, 46);
+}
+
+.circle.green {
+  background-color: rgb(45, 200, 66);
+}
+
+/* Copy button */
+.copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.copy-btn:hover {
+  color: #34d399; /* success green */
+}
+
+/* Textarea */
+.paste-textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #000;
+  caret-color: #000;
+  border: none;
+  outline: none;
+  background: transparent;
+  resize: none;
+  box-sizing: border-box;
+}

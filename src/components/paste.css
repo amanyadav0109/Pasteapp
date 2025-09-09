@@ -1,0 +1,172 @@
+/* Main container */
+.paste-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.paste-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Search */
+.paste-search {
+  width: 100%;
+  display: flex;
+  padding: 8px 12px;
+  border: 1px solid rgba(128, 121, 121, 0.3);
+  border-radius: 4px;
+  margin-top: 24px;
+}
+
+.paste-search-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #000;
+}
+
+/* All Pastes */
+.all-pastes {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(128, 121, 121, 0.3);
+  border-radius: 6px;
+  padding: 16px 0;
+}
+
+.all-pastes-title {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0 16px 16px;
+  border-bottom: 1px solid rgba(128, 121, 121, 0.3);
+}
+
+/* Paste list */
+.pastes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 16px;
+}
+
+/* Paste item */
+.paste-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid rgba(128, 121, 121, 0.3);
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 15px;
+}
+
+@media (min-width: 640px) {
+  .paste-item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Left side (title & content) */
+.paste-item-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.paste-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.paste-content {
+  font-size: 14px;
+  color: #707070;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3; /* limit to 3 lines */
+
+}
+
+
+/* Right side (icons & date) */
+.paste-item-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .paste-item-right {
+    align-items: flex-end;
+  }
+}
+
+/* Icon buttons */
+.paste-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.icon-button {
+  padding: 6px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #c7c7c7;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon-button:hover {
+  background-color: transparent;
+}
+
+.icon-pencil:hover {
+  color: #3b82f6;
+}
+
+.icon-trash:hover {
+  color: #ec4899;
+}
+
+.icon-eye:hover {
+  color: #f97316;
+}
+.icon-share:hover{
+  color: #f97316;
+
+}
+
+.icon-copy:hover {
+  color: #22c55e;
+}
+
+/* Date */
+.paste-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* No data */
+.no-data {
+  text-align: center;
+  font-size: 24px;
+  color: #ef4444;
+  width: 100%;
+}

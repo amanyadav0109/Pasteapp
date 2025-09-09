@@ -1,0 +1,16 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root container for the app */
+.root-container {
+  width: 100vw;      /* full viewport width */
+  min-height: 100vh; /* full viewport height */
+  overflow: hidden;  /* hide overflowing content */
+  display: flex;
+  flex-direction: column;
+}
+

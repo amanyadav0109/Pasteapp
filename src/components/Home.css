@@ -1,0 +1,138 @@
+/* Main container */
+.home-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px; /* py-10 px-5 */
+  box-sizing: border-box;
+}
+
+/* Inner container */
+.home-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* gap-y-5 */
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Header row: input + buttons */
+.home-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px; /* gap-x-4 */
+}
+
+/* Input */
+.title-input {
+  padding: 8px; /* p-2 */
+  font-size: 16px;
+  color: #000;
+  border: 1px solid #c7c7c7;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.title-input-long {
+  width: 80%;
+}
+
+.title-input-short {
+  width: 85%;
+}
+
+/* Buttons */
+.button {
+  padding: 10px 20px; /* px-5 py-2.5 */
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  background-color: #2563eb; /* blue-700 */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1e40af; /* blue-800 */
+}
+
+/* Paste card */
+.paste-container {
+  width: 100%; /* w-full */
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  align-items: flex-start; /* items-start */
+  position: relative; /* relative */
+  border-radius: 12px; /* rounded (you can adjust px) */
+  background-color: rgba(255, 255, 255, 0.1); /* bg-opacity-10 */
+  border: 1px solid rgba(128, 121, 121, 0.3); /* border color */
+  backdrop-filter: blur(12px); /* backdrop-blur-2xl */
+  box-sizing: border-box;
+}
+
+
+/* Paste card header */
+.paste-card-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px; /* gap-x-4 */
+  padding: 8px 16px; /* px-4 py-2 */
+  border-bottom: 1px solid rgba(128, 121, 121, 0.3);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Circles */
+.circles {
+  display: flex;
+  gap: 6px;
+}
+
+.circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.circle-red { background-color: rgb(255,95,87); }
+.circle-yellow { background-color: rgb(254,188,46); }
+.circle-green { background-color: rgb(45,200,66); }
+
+/* Copy button */
+.copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.copy-btn:hover {
+  color: #34d399; /* green-500 */
+}
+
+/* Textarea */
+.paste-textarea {
+  width: 100%;
+  padding: 12px; /* p-3 */
+  font-size: 16px;
+  font-family: inherit;
+  color: #000;
+  caret-color: #000;
+  border: none;
+  outline: none;
+  background: transparent;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.paste-textarea:focus-visible {
+  outline: none; /* focus-visible:ring-0 */
+}
