@@ -1,12 +1,12 @@
 import { Calendar, Copy, Eye, PencilLine, Trash2 } from "lucide-react";
 import { Share2 } from "lucide-react"; // Share2 is a common share icon
-
+import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import { removeFromPastes } from "../redux/pasteSlice";
 import { FormatDate } from "../data/formatDate";
-import "./paste.css";// Import plain CSS
+import "./paste.css"; // Import plain CSS
 
 const Paste = () => {
   const pastes = useSelector((state) => state.paste.pastes);
@@ -63,13 +63,12 @@ const Paste = () => {
                       >
                         <Trash2 size={20} className="icon-trash" />
                       </button>
-                      <a
-                        href={`/pastes/${paste?._id}`}
-                        target="_blank"
+                      <Link
+                        to={`/pastes/${paste?._id}`}
                         className="icon-button"
                       >
                         <Eye size={20} className="icon-eye" />
-                      </a>
+                      </Link>
                       <button
                         className="icon-button"
                         onClick={() => {
@@ -98,7 +97,6 @@ const Paste = () => {
                         }}
                       >
                         <Share2 size={20} className="icon-share" />
-                        
                       </button>
                     </div>
                     <div className="paste-date">
