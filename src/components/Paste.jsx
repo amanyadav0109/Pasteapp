@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import { removeFromPastes } from "../redux/pasteSlice";
 import { FormatDate } from "../data/formatDate";
-import "./Paste.css"; // Import plain CSS
+import "../components/Paste.css";// Import plain CSS
 
 const Paste = () => {
   const pastes = useSelector((state) => state.paste.pastes);
