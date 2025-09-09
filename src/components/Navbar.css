@@ -1,9 +1,4 @@
-/* .navdiv{
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-  justify-content: space-between;
-} */
+
 .navdiv {
   display: flex;
   justify-content: center;
