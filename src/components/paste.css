@@ -90,12 +90,13 @@
 .paste-content {
   font-size: 14px;
   color: #707070;
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 3; /* limit to 3 lines */
-
+  -webkit-line-clamp: 3; 
 }
+
 
 
 /* Right side (icons & date) */
