@@ -15,7 +15,7 @@
 }
 
 .active-link {
-  color: blue;
+  color: rgb(69, 68, 172);
   font-weight: bold;
   font-size: 18px;
   text-decoration: underline;
